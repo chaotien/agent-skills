@@ -1,0 +1,8 @@
+{
+  "name": "survey-mode",
+  "description": "Listen-and-digest mode: Claude only listens, digests, and marks key points during free writing / brain dumps — no advice, no solutions, no converging — until the user calls stop, then delivers an integrated digest board.",
+  "version": "0.1.0",
+  "author": {
+    "name": "chaotien"
+  }
+}
