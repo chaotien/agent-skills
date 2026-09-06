@@ -42,9 +42,9 @@ npx skills add chaotien/agent-skills
 
 ## What is survey-mode? | survey-mode 是什麼?
 
-When you want to free-write, brain-dump, or pour out context, the most valuable help isn't an answer — it's a listener that never interrupts, remembers everything, and sees the threads. In survey mode, Claude only **listens, digests, and marks key points**, and points out tensions and gaps. It gives zero advice and never converges until you say stop ("夠了", "停", "收斂") — then it hands you a structured digest board and gives the wheel back to you.
+When you want to free-write, brain-dump, or pour out context, the most valuable help isn't an answer — it's a listener that never interrupts, remembers everything, and sees the threads. In survey mode, Claude only **listens, digests, and marks key points**, and points out tensions and gaps. It gives zero advice and never converges until you say stop ("夠了", "停", "收斂") — then it hands you a structured digest board, and you decide what's next: converge, start planning, or keep dumping.
 
-當你想 free writing、brain dump、倒垃圾式地輸出想法時,最有價值的協助不是「答案」,而是一個不搶話、記得住一切、看得出脈絡的聽眾。在 survey mode 裡,Claude 只**聽、消化、標記關鍵點**,指出張力與缺口,絕不給建議、不收斂——直到你喊停,才交出整合後的 digest board,並把方向盤還給你。
+當你想 free writing、brain dump、倒垃圾式地輸出想法時,最有價值的協助不是「答案」,而是一個不搶話、記得住一切、看得出脈絡的聽眾。在 survey mode 裡,Claude 只**聽、消化、標記關鍵點**,指出張力與缺口,絕不給建議、不收斂——直到你喊停,才交出整合後的 digest board,由你決定下一步——收斂、想方案,或再補一輪。
 
 ## License
 
