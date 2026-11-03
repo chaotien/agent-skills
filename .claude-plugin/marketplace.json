@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "A collection of agent skills for Claude",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "plugins": [
     {
@@ -15,6 +15,15 @@
       "strict": false,
       "skills": [
         "./skills/survey-mode"
+      ]
+    },
+    {
+      "name": "swiss-slide-style",
+      "description": "Swiss-minimal slide spec with a red (#C00000) + blue (#1912F7) dual-accent semantic system, large-type exec variant, Gantt and wording rules for upward reporting decks.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/swiss-slide-style"
       ]
     }
   ]
