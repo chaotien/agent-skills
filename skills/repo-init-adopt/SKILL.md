@@ -52,11 +52,14 @@ agent 能不能接手一個系統，關鍵不在模型多聰明，而在 repo �
 
 AGENTS.md 每一輪都會進 agent 的 context，所以**要短**。長的背景放 `docs/`，AGENTS.md 只寫去哪裡讀。
 
+**repo 一定要有遠端 remote。** 只存在某個人筆電上的 repo，其他人和 manager agent 都讀不到，也沒有備份；形狀再一致也接不上。
+
 ## Init 步驟（新 repo）
 
 1. 用 `survey-mode` 跟 owner 倒出終點與需求。
 2. 建四件：PLAN.md、CIP.md、AGENTS.md、docs/。
-3. 交給 `rolling-plan` 寫第一個 phase。
+3. **建立遠端 remote 並推上第一個 commit**（例如 GitLab、GitHub 或公司內部的 Git server）。
+4. 交給 `rolling-plan` 寫第一個 phase。
 
 ## Adopt 步驟（既有 repo）
 
@@ -64,7 +67,8 @@ AGENTS.md 每一輪都會進 agent 的 context，所以**要短**。長的背景
 2. **補背景**：只看 code 不夠時，用 `survey-mode` 問 owner；收斂結果寫進 `docs/`。第一版不用問得很完整，卡住的地方之後當 CIP 補。
 3. **反推現況**：從 code、commit 和文件推出目前大概在哪個 phase，寫進 PLAN.md 的「現況」，並請 owner 確認。
 4. **補齊缺的檔案。** 不搬動、不改寫既有的 code 與文件；既有文件可以從 AGENTS.md 或 docs/ 連過去。
-5. 交給 `rolling-plan` 寫下一個 phase。
+5. **確認有遠端 remote。** 還沒有的就建一個並推上去；已經有的，把補齊的檔案 commit、push。
+6. 交給 `rolling-plan` 寫下一個 phase。
 
 ## 紅線
 
@@ -75,6 +79,7 @@ AGENTS.md 每一輪都會進 agent 的 context，所以**要短**。長的背景
 ## 完成檢查
 
 - [ ] 四件都在
+- [ ] 有遠端 remote，四件已 commit 並 push
 - [ ] AGENTS.md 五段都有寫，而且夠短
 - [ ] PLAN.md 寫明現在在哪個 phase，owner 確認過
 - [ ] 沒有重抄共用知識
