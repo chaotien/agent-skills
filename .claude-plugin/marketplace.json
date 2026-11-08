@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "A collection of agent skills for Claude",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "plugins": [
     {
@@ -24,6 +24,45 @@
       "strict": false,
       "skills": [
         "./skills/swiss-slide-style"
+      ]
+    },
+    {
+      "name": "rolling-plan",
+      "description": "Turn a survey into a rolling PLAN.md: start from the end state, detail only the next phase, checkable done-criteria per phase, and a decision log for every turn.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/rolling-plan"
+      ]
+    },
+    {
+      "name": "repo-init-adopt",
+      "description": "Make a repo agent-ready: init a new one in a fixed shape, or adopt an existing one by auditing and filling in PLAN.md, CIP.md, AGENTS.md and docs/.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/repo-init-adopt"
+      ]
+    },
+    {
+      "name": "cip-loop",
+      "description": "Continuous improvement loop: log every finding as one line in CIP.md, pick one per session, verify by running it, and write back to PLAN.md only when direction changes.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/cip-loop"
+      ]
+    },
+    {
+      "name": "agent-dev-flow",
+      "description": "The full agent development flow in one install: survey-mode → rolling-plan → repo-init-adopt → cip-loop. Grow any repo into an agent-ready system with the same shape and rhythm.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/survey-mode",
+        "./skills/rolling-plan",
+        "./skills/repo-init-adopt",
+        "./skills/cip-loop"
       ]
     }
   ]
