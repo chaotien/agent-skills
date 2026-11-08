@@ -98,6 +98,8 @@ Because every repo has the same shape, a manager agent can read across them to s
 
 形狀一致,負責看全局的 manager agent 就能直接讀各個 repo 掌握戰況,不必靠口頭回報。這套開發流本身也會進化:大家用的時候卡住的地方,記進本 repo 的 [`CIP.md`](CIP.md)。
 
+**Guide | 使用說明:** [`docs/agent-dev-flow-guide.md`](docs/agent-dev-flow-guide.md) — when to use which skill, two worked examples (new system / existing system), and the daily rhythm. | 什麼時候用哪一支、新系統與既有系統兩個範例、每天的節奏。
+
 ## License
 
 [MIT](LICENSE)
